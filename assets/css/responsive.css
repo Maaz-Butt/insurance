@@ -1,0 +1,1245 @@
+/* ===== 02. Global Style ===== */
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 71px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 959px;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 38px;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+  a {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 38px;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  h6 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+  button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px 35px;
+  }
+  a {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .yellow-btn a {
+    padding: 10px 15px;
+  }
+  .text-btn a {
+    padding: 10px 8px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  h6 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  button {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px 35px;
+  }
+  a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .yellow-btn a {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .text-btn a {
+    padding: 8px 5px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .hover1 {
+    padding: 7px 25px;
+  }
+  .hover2 {
+    padding: 7px 25px;
+  }
+}
+/* ===== End of 02. Global Style ===== */
+/* ========= 1.1. header section ========= */
+@media screen and (min-width: 991px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: end;
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .open-aside {
+    display: block;
+  }
+  header .vertical-hr,
+  header .call,
+  header .number {
+    display: none;
+  }
+  .nav-logo img {
+    width: 178px;
+  }
+  .side-nav-logo {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-logo img {
+    width: 170px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nav-logo img {
+    width: 154px;
+  }
+  aside .fa-xmark {
+    font-size: 20px;
+  }
+  .open-aside {
+    padding: 8px 14px;
+    font-size: 22px;
+  }
+}
+/* ========= End of 1.1. header section ========= */
+/* ========= 1.2. hero section ========= */
+@media screen and (max-width: 1299px) {
+  .Hero .circle {
+    height: 340px;
+    width: 340px;
+  }
+  .Hero .circle img {
+    width: 160%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .Hero .content {
+    width: 450px;
+  }
+  .Hero .circle {
+    height: 335px;
+    width: 335px;
+  }
+  .Hero .circle img {
+    width: 155%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Hero {
+    padding: 70px 0px 100px;
+  }
+  .Hero .content {
+    width: 385px;
+  }
+  .Hero .circle {
+    height: 300px;
+    width: 300px;
+  }
+  .Hero .circle img {
+    width: 115%;
+  }
+  .Hero .content .d-flex {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Hero .content {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Hero {
+    padding: 50px 0px 50px;
+    background-image: url("../images/bg/hero-clear-bg.jpg");
+  }
+  .Hero .content {
+    width: 90%;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .Hero .justify-content-center {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Hero .content {
+    width: 100%;
+  }
+  .Hero .content .d-flex {
+    margin-top: 10px;
+  }
+  .Hero .content .d-flex .yellow-btn {
+    width: 85vw;
+  }
+  .Hero .content .d-flex .text-btn a {
+    display: none;
+  }
+  .Hero .circle img {
+    width: 110%;
+  }
+}
+/* ========= End of 1.2. hero section ========= */
+/* ========= 1.3. Benefits section ========= */
+@media screen and (max-width: 1199px) {
+  .Benefits .features .details {
+    gap: 30px;
+  }
+  .Benefits .companies {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Benefits {
+    padding: 70px 10px;
+  }
+  .Benefits .content {
+    padding: 0px 5px;
+  }
+  .Benefits .col-md-5 {
+    margin: 0px;
+    padding: 0px;
+  }
+  .Benefits .features {
+    padding: 30px 10px 30px 0px;
+  }
+  .Benefits .features .details {
+    gap: 45px;
+    padding-left: 10px;
+  }
+  .Benefits .features .icons .icon {
+    height: 70px;
+    width: 70px;
+  }
+  .Benefits .vertical-hr2 {
+    display: none;
+  }
+  .Benefits .container .row {
+    margin-bottom: 100px;
+  }
+  .Benefits .companies {
+    gap: 0px;
+    margin-top: 40px;
+  }
+  .Benefits .companies div img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .Benefits .features .details {
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Benefits .content {
+    height: 200px;
+  }
+  .Benefits .features {
+    padding: 0px 10px 30px 10px;
+  }
+  .Benefits .features .details {
+    gap: 75px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .Benefits .content {
+    align-items: center;
+    text-align: center;
+  }
+  .Benefits .features .details {
+    gap: 50px;
+  }
+  .Benefits .container .row {
+    margin-bottom: 50px;
+  }
+  .Benefits .companies {
+    margin-top: 30px;
+  }
+}
+/* ========= End of 1.3. Benefits section ========= */
+/* ========= 1.4. About section ========= */
+@media screen and (max-width: 1399px) {
+  .About .justify-content-between .client1 {
+    top: 40px;
+    left: 0px;
+  }
+  .About .justify-content-between .client2 {
+    bottom: 45px;
+    right: 0px;
+  }
+  .About .justify-content-between .client1,
+  .About .justify-content-between .client2 {
+    width: 48%;
+  }
+  .About .justify-content-between .users {
+    left: 0px;
+    padding: 20px 50px 20px 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .About .content {
+    gap: 30px;
+  }
+  .About .content hr {
+    margin: 10px 0px;
+  }
+  .About .justify-content-between .client1 {
+    top: 60px;
+    height: 330px;
+  }
+  .About .justify-content-between .client2 {
+    bottom: 100px;
+    height: 330px;
+  }
+  .About .justify-content-between .users {
+    left: 0px;
+    top: 410px;
+    padding: 15px 40px 15px 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .About .justify-content-between {
+    height: 600px;
+  }
+  .About .content .my-4 {
+    margin: 0px;
+    padding: 0px;
+  }
+  .About .justify-content-between .client1 {
+    left: -10px;
+    top: 60px;
+    height: 280px;
+    width: 200px;
+  }
+  .About .justify-content-between .client2 {
+    right: -10px;
+    bottom: 50px;
+    height: 280px;
+    width: 200px;
+  }
+  .About .justify-content-between .users {
+    left: -10px;
+    top: 370px;
+    border-radius: 18px;
+  }
+  .About .justify-content-between .client1,
+  .About .justify-content-between .client2 {
+    width: 52%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .About .justify-content-between .users {
+    top: 370px;
+  }
+  .About .justify-content-between .client1 {
+    top: 70px;
+  }
+  .About .justify-content-between .client2 {
+    bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .About .content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .About .features .justify-content-center {
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0px;
+  }
+  .About .features .justify-content-center .img-main img {
+    width: 70%;
+  }
+  .About .features .justify-content-center .img-main-2 img {
+    width: 50%;
+  }
+  .About .content hr {
+    display: none;
+  }
+  .About .yellow-btn {
+    width: 90%;
+  }
+  .About .justify-content-between {
+    background-image: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 80px;
+  }
+
+  .About .client1,
+  .About .client2 {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .About .justify-content-between .client1 {
+    height: 280px;
+    width: 400px;
+  }
+  .About .justify-content-between .client2 {
+    height: 280px;
+    width: 400px;
+  }
+
+  .About .users {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .About {
+    padding: 50px 0px 0px;
+  }
+  .About .justify-content-between .client1 {
+    width: 100%;
+  }
+  .About .justify-content-between .client2 {
+    width: 100%;
+  }
+}
+/* ========= End of 1.4. About section ========= */
+/* ========= 1.5. Services section ========= */
+@media screen and (max-width: 991px) {
+  .Services {
+    padding: 70px 0px;
+  }
+  .Services .row {
+    padding: 0px 20px;
+  }
+  .Services .flex-column {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Services .flex-column {
+    padding: 10px 10px 10px 10px;
+    height: 260px;
+    border: none;
+    align-items: center;
+    text-align: center;
+  }
+  .Services .first {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Services {
+    padding: 50px 0px 30px;
+  }
+  .Services .flex-column {
+    padding: 0px 0px 0px 0px;
+    margin: 15px 0px;
+    gap: 5px;
+  }
+}
+
+/* ========= End of 1.5. Services section ========= */
+/* ========= 1.6. Committed section ========= */
+@media screen and (max-width: 1199px) {
+  .Committed {
+    padding: 0px 0px 0px;
+  }
+  .Committed .content {
+    width: 480px;
+    gap: 20px;
+  }
+  .Committed .bg {
+    height: 90%;
+    padding-left: 60px;
+  }
+  .Committed .bg img {
+    width: 150%;
+    height: 80%;
+  }
+  .Committed .justify-content-between {
+    padding: 50px 0px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .Committed .content {
+    width: 400px;
+    gap: 20px;
+  }
+  .Committed .bg {
+    height: 80%;
+    padding-left: 40px;
+  }
+  .Committed .justify-content-between {
+    padding: 40px 60px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .Committed .content {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Committed .banner {
+    justify-content: center;
+  }
+  .Committed .bg {
+    padding: 20px 20px;
+    width: 80%;
+  }
+  .Committed .bg img {
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+  .Committed .content {
+    padding: 0px 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    width: 100%;
+  }
+  .Committed .col-md-6 .d-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+  .Committed .features i {
+    font-size: 35px;
+  }
+  .Committed .yellow-btn {
+    width: 90%;
+    margin-top: 10px;
+  }
+  .Committed .justify-content-between {
+    padding: 30px 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Committed .bg {
+    width: 90%;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .Committed .content .para {
+    margin-top: 10px !important;
+  }
+  .Committed .features {
+    margin: 10px 0px;
+  }
+  .Committed .justify-content-between {
+    padding: 20px 0px 50px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .Committed .justify-content-between .d-flex h1 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+}
+/* ========= End of 1.6. Committed section ========= */
+/* ========= 1.7. Secure section ========= */
+@media screen and (max-width: 1199px) {
+  .Secure .row {
+    width: 980px;
+  }
+  .Secure .row .col-md-4 hr {
+    width: 226px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .Secure {
+    padding: 70px 0px 100px;
+  }
+  .Secure .row {
+    width: 760px;
+  }
+  .Secure .row .col-md-4 {
+    padding: 5px;
+  }
+  .Secure .row .col-md-4 hr {
+    width: 152px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Secure .content {
+    width: 460px;
+  }
+  .Secure .row {
+    margin-top: 30px;
+    width: 460px;
+  }
+  .Secure .row .col-md-4 hr {
+    display: none;
+  }
+  .Secure .row .col-md-4 {
+    gap: 10px;
+    margin: 15px 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Secure {
+    padding: 50px 0px;
+  }
+  .Secure .content {
+    width: 315px;
+  }
+  .Secure .row {
+    margin-top: 30px;
+    width: 315px;
+  }
+  .Secure .row .col-md-4 hr {
+    display: none;
+  }
+  .Secure .row .col-md-4 {
+    gap: 10px;
+    margin: 15px 0px;
+  }
+  .Secure .row .col-md-4 h2 {
+    height: 65px;
+    width: 65px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+/* ========= End of 1.7. Secure section ========= */
+/* ========= 1.8. Qoute section ========= */
+@media screen and (max-width: 1199px) {
+  .Qoute {
+    height: 700px;
+  }
+  .Qoute .form input {
+    width: 220px;
+  }
+  .Qoute .qoute-img {
+    height: 760px;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .Qoute {
+    padding: 70px 0px 0px;
+    height: 700px;
+  }
+  .Qoute .content {
+    gap: 10px;
+  }
+  .Qoute .form input {
+    width: 200px;
+  }
+  .Qoute .qoute-img {
+    height: 750px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .Qoute {
+    height: 600px;
+  }
+  .Qoute .content {
+    gap: 3px;
+  }
+  .Qoute .form input {
+    width: 100%;
+  }
+  .Qoute .qoute-img {
+    height: 650px;
+    width: 360px;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Qoute {
+    height: 100%;
+    padding: 50px 0px 0px;
+  }
+  .Qoute .content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .Qoute .content p {
+    margin-top: 8px;
+  }
+  .Qoute .qoute-img {
+    margin: 0px auto;
+    position: static;
+    height: 450px;
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Qoute .form input {
+    padding: 10px 20px;
+  }
+  .Qoute .form .last {
+    padding: 20px 20px 100px;
+  }
+}
+/* ========= End of 1.8. Qoute section ========= */
+/* ========= 1.9. Team section ========= */
+@media screen and (max-width: 1199px) {
+  .Team .content {
+    padding: 20px 30px;
+    height: 85%;
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .Team {
+    padding: 70px 0px;
+  }
+  .Team .content {
+    padding: 20px 20px;
+    height: auto;
+    margin-left: -70px;
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Team {
+    text-align: center;
+  }
+  .Team .col-md-6 {
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  .Team .col-md-6:nth-child(2) {
+    margin-top: 25px;
+  }
+  .Team .d-flex {
+    flex-direction: column;
+    height: auto;
+  }
+  .Team .content {
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Team {
+    padding: 50px 0px;
+  }
+  .Team .content {
+    width: 95%;
+  }
+}
+/* ========= End of 1.9. Team section ========= */
+/* ========= 1.10. Customer section ========= */
+@media screen and (max-width: 991px) {
+  .Customer .container .Customer-slider {
+    width: 700px;
+  }
+  .Customer .container .d-flex {
+    padding: 20px 10px;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Customer .container .Customer-slider {
+    width: 480px;
+  }
+  .Customer .container .d-flex {
+    padding: 0px 10px;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .Customer .container .d-flex img {
+    width: 270px;
+    height: 250px;
+    border-radius: 20px;
+  }
+  .Customer .container .d-flex .content {
+    gap: 15px;
+  }
+  .Customer .container .d-flex .content h3 {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Customer .container .Customer-slider {
+    width: 310px;
+  }
+}
+/* ========= End of 1.10. Customer section ========= */
+/* ========= 1.11. Consultation section ========= */
+@media screen and (max-width: 991px) {
+  .Consultation {
+    padding: 90px 0px 70px;
+  }
+  .Consultation .flex-column {
+    gap: 15px;
+  }
+  .Consultation .btns {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Consultation .flex-column {
+    width: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Consultation {
+    padding: 70px 0px 50px;
+  }
+  .Consultation .btns {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .Consultation .btns .yellow-btn {
+    width: 100%;
+  }
+}
+/* ========= End of 1.11. Consultation section ========= */
+/* ========= 1.12. Pricing section ========= */
+@media screen and (max-width: 1199px) {
+  .Pricing .flex-column {
+    padding: 35px;
+    width: 310px;
+  }
+  .Pricing .Premium {
+    padding: 40px;
+    width: 310px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .Pricing {
+    padding: 70px 0px;
+  }
+  .Pricing .container .row {
+    margin-top: 30px;
+  }
+  .Pricing .container .content {
+    width: 480px;
+  }
+  .Pricing .flex-column {
+    padding: 31px;
+    width: auto;
+    gap: 10px;
+  }
+  .Pricing .flex-column .items {
+    gap: 20px;
+  }
+  .Pricing .flex-column hr {
+    margin: 0px 0px 10px;
+  }
+  .Pricing .flex-column span h2 {
+    line-height: 24px;
+  }
+  .Pricing .Premium {
+    padding: 30px;
+    width: auto;
+    gap: 10px;
+  }
+  .Pricing .Premium .items {
+    gap: 20px;
+  }
+  .Pricing .Premium hr {
+    margin: 10px 0px 10px;
+  }
+  .Pricing .Premium span h2 {
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Pricing {
+    padding: 50px 0px;
+  }
+  .Pricing .container .row {
+    gap: 20px;
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Pricing {
+    padding: 50px 0px;
+  }
+  .Pricing .container .content {
+    width: auto;
+  }
+  .Pricing .flex-column .items {
+    gap: 10px;
+  }
+  .Pricing .flex-column .yellow-btn {
+    margin-top: 15px;
+  }
+  .Pricing .Premium .items {
+    gap: 10px;
+  }
+  .Pricing .Premium .yellow-btn {
+    margin-top: 15px;
+  }
+}
+/* ========= End of 1.12. Pricing section ========= */
+/* ========= 1.13. FAQ section ========= */
+@media screen and (max-width: 1399px) {
+  .FAQ .accordion-item:nth-last-child(1) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .FAQ .d-flex {
+    padding-left: 0px;
+    gap: 35px;
+  }
+  .FAQ .image-item img {
+    width: 111%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .FAQ {
+    padding: 70px 0px;
+  }
+  .FAQ .row {
+    margin-top: 50px;
+  }
+  .FAQ .content {
+    width: 480px;
+  }
+  .FAQ .accordion-item {
+    gap: 15px;
+    margin: 0px 0px 10px;
+  }
+  .FAQ .accordion-button {
+    padding: 5px;
+  }
+  .FAQ .accordion-body {
+    padding: 5px;
+  }
+  .FAQ .image-item img {
+    width: 100%;
+  }
+  .FAQ .d-flex {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .FAQ .row .col-md-4 {
+    width: 100%;
+  }
+  .FAQ .d-flex {
+    margin-top: 15px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .FAQ {
+    padding: 50px 0px;
+  }
+  .FAQ .content {
+    width: auto;
+  }
+  .FAQ .image-item img {
+    border-radius: 18.05px;
+  }
+}
+/* ========= End of 1.13. FAQ section ========= */
+/* ========= 1.14. Posts section ========= */
+@media screen and (max-width: 991px) {
+  .Posts {
+    padding: 70px 0px;
+  }
+  .Posts .content {
+    width: 480px;
+  }
+  .Posts .row {
+    margin-top: 30px;
+    padding: 0px 40px;
+  }
+  .Posts .row .col-md-3 {
+    gap: 15px;
+  }
+  .Posts .row .col-md-3 img {
+    border-radius: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Posts .row {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .Posts .row .col-md-3 {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Posts {
+    padding: 50px 0px;
+  }
+  .Posts .content {
+    width: auto;
+    gap: 10px;
+  }
+  .Posts .row {
+    padding: 0px 20px;
+    gap: 25px;
+  }
+  .Posts .row .col-md-3 {
+    gap: 10px;
+    width: 100%;
+  }
+}
+/* ========= End of 1.14. Posts section ========= */
+/* ========= 1.15. Footer section ========= */
+@media screen and (max-width: 1399px) {
+  .Footer .newsletter .icons {
+    gap: 10px;
+  }
+  .Footer .address {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .Footer .newsletter .icons {
+    gap: 10px;
+  }
+  .Footer .address {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 991px) {
+  .Footer {
+    padding: 70px 0px;
+  }
+  .Footer .d-flex ul {
+    gap: 25px;
+  }
+  .Footer .main {
+    width: 530px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Footer .container {
+    padding: 0px 30px;
+  }
+  .Footer .d-flex ul {
+    display: none;
+  }
+  .Footer .d-flex {
+    justify-content: center;
+  }
+  .Footer .newsletter {
+    flex-direction: column;
+    text-align: center;
+  }
+  .Footer .address {
+    display: none;
+  }
+  .Footer .main {
+    margin: 15px 0px;
+  }
+  .Footer .main {
+    width: 400px;
+  }
+  .Footer .copyright {
+    justify-content: center;
+    text-align: center;
+  }
+  .Footer .copyright p:nth-last-child(1) {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Footer {
+    padding: 50px 0px;
+  }
+  .Footer .main {
+    width: auto;
+  }
+}
+@media screen and (max-width: 350px) {
+  .Footer .main {
+    width: 290px;
+  }
+}
+/* ========= End of 1.15. Footer section ========= */
+/* ========= 12.1. Coming section ========= */
+@media screen and (max-width: 991px) {
+  .Coming h1 {
+    font-size: 100px;
+    width: 690px;
+    line-height: 100px;
+  }
+  .Coming .content {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Coming h1 {
+    font-size: 70px;
+    width: 480px;
+    line-height: 70px;
+    padding: 0px 0px;
+  }
+  .Coming .content p {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Coming h1 {
+    font-size: 65px;
+    width: auto;
+    line-height: 60px;
+  }
+  .Coming .content p {
+    width: auto;
+    gap: 15px;
+  }
+  .Coming .align-items-center .title {
+    width: auto;
+    margin-bottom: 0px;
+  }
+}
+/* ========= End of 12.1. Coming section ========= */
+/* ========= 13.1. Error section ========= */
+@media screen and (max-width: 991px) {
+  .Error h1 {
+    font-size: 150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Error .content {
+    width: 480px;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Error h1 {
+    padding: 50px 20px;
+    font-size: 100px;
+    border-radius: 30px;
+  }
+  .Error .content {
+    width: auto;
+    gap: 15px;
+  }
+  .Error .align-items-center .title {
+    width: auto;
+    margin-bottom: 0px;
+  }
+}
+/* ========= End of 13.1. Error section ========= */

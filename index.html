@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Future Insur</title>
+    <!-- favicon  -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/fav-icon.svg"
+      type="image/x-icon"
+    />
+    <!-- faremwork of css -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- style sheet of css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Responsive sheet of css -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- fonts awsome icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- slick-slider link css -->
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      <!-- ======== 1.1. Header section ======== -->
+      <header>
+        <nav class="container navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <!-- site logo -->
+            <a class="nav-logo p-0" href="index.html">
+              <figure><img src="assets/images/logo.svg" alt="logo" /></figure>
+            </a>
+            <!-- navigation button  -->
+            <button class="open-aside" onclick="open_aside()" type="button">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <!-- navigation bar manu  -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav d-flex justify-content-center align-items-center gap-lg-4 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="dropdown">
+                  <a class="nav-link d-flex gap-2" href="#"
+                    >Cases <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="studies.html"
+                        >Case Studies</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="studies-details.html"
+                        >Case Studies Details</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="dropdown">
+                  <a class="nav-link d-flex gap-2" href="#"
+                    >Pages <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="services.html">Services</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="our_Blog.html">Our Blog</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="blog_Detail.html"
+                        >Blog Detail</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="team.html">Team</a></li>
+                    <li>
+                      <a class="dropdown-item" href="testimonials.html"
+                        >Testimonials</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                    <li>
+                      <a class="dropdown-item" href="contact.html">Contact</a>
+                    </li>
+                    <li><a class="dropdown-item" href="404.html">404</a></li>
+                    <li>
+                      <a class="dropdown-item" href="coming.html"
+                        >Coming Soon</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <hr class="vertical-hr" />
+            <div class="call">
+              <img src="assets/images/icons/call.png" alt="call" />
+            </div>
+            <p class="number">+123 456 7890</p>
+          </div>
+        </nav>
+        <!--===== aside navigation slidebar =====-->
+        <aside>
+          <div id="mySidenav" class="right-sidbar">
+            <div
+              class="side-nav-logo d-flex justify-content-between align-items-center ps-2 pe-1 nav-logo"
+            >
+              <figure class="navbar-brand">
+                <a href="index.html"
+                  ><img src="assets/images/logo.svg" alt="img" class=""
+                /></a>
+              </figure>
+              <button
+                class="fa-solid fa-xmark"
+                onclick="close_aside()"
+              ></button>
+            </div>
+            <ul>
+              <li class="nav-item">
+                <a aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <div
+                  class="d-flex align-items-center justify-content-between"
+                  id="slid-btn"
+                >
+                  <button class="a-slid page-btn">Cases</button>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul id="slid-drop">
+                  <li><a href="blog_Detail.html">Case Studies</a></li>
+                  <li><a href="our_Blog.html">Case Studies Details</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <div
+                  class="d-flex align-items-center justify-content-between"
+                  id="slid-btn"
+                >
+                  <button class="a-slid page-btn">Pages</button>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul id="slid-drop">
+                  <li><a href="blog_Detail.html">Blog Detail</a></li>
+                  <li><a href="our_Blog.html">Our Blog</a></li>
+                  <li><a href="team.html">Team</a></li>
+                  <li><a href="testimonials.html">Testimonials</a></li>
+                  <li><a href="faq.html">FAQs</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="404.html">404</a></li>
+                  <li><a href="coming.html">Coming Soon</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </header>
+      <!-- ======== End of 1.1. Header section ========  -->
+      <!-- ======== 1.2. Hero section ========  -->
+      <section class="Hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="content">
+                <h1>Get life insur</h1>
+                <h2>for you and your loved ones</h2>
+                <p class="my-3">
+                  Lorem ipsum dolor sit amet consectetur. Tortor sollicitudin
+                  massa cras elementum gravida quis. Nisl vulputate sit pretium
+                  nec arcu nunc duis enim nisl. In urna fermentum dictum
+                  faucibus.
+                </p>
+                <div class="d-flex gap-2">
+                  <div class="yellow-btn">
+                    <a href="#">Get A Qoute</a>
+                  </div>
+                  <div class="text-btn">
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center"
+            >
+              <div class="circle">
+                <img src="assets/images/index/hero.png" alt="hero" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======== End of 1.2. Hero section ========  -->
+      <!-- ======== 1.3. Benefits section ========  -->
+      <section class="Benefits">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="content">
+                <h2>Insurance Benefits You Found Happy</h2>
+                <p class="my-3">
+                  Lorem ipsum dolor sit amet consect. Eu nunc phasellus dictum
+                  urna. Viverra enim purus.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="features d-flex">
+                <div class="icons">
+                  <div class="icon">
+                    <img
+                      class="icon1"
+                      src="assets/images/icons/certified.png"
+                      alt="icon"
+                    />
+                    <img
+                      class="icon2"
+                      src="assets/images/icons/certified-white.png"
+                      alt="icon"
+                    />
+                  </div>
+                  <hr class="vertical-hr" />
+                  <div class="icon">
+                    <img
+                      class="icon1"
+                      src="assets/images/icons/trusted.png"
+                      alt="icon"
+                    />
+                    <img
+                      class="icon2"
+                      src="assets/images/icons/trusted-white.png"
+                      alt="icon"
+                    />
+                  </div>
+                  <hr class="vertical-hr" />
+                  <div class="icon">
+                    <img
+                      class="icon1"
+                      src="assets/images/icons/agent.png"
+                      alt="icon"
+                    />
+                    <img
+                      class="icon2"
+                      src="assets/images/icons/agent-white.png"
+                      alt="icon"
+                    />
+                  </div>
+                </div>
+                <div class="details">
+                  <div class="d-flex flex-column gap-2">
+                    <h3>Certified</h3>
+                    <p>
+                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                      dapibus leo.
+                    </p>
+                  </div>
+                  <div class="d-flex flex-column gap-2">
+                    <h3>Trusted</h3>
+                    <p>
+                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                      dapibus leo.
+                    </p>
+                  </div>
+                  <div class="d-flex flex-column gap-2">
+                    <h3>Expert Agents</h3>
+                    <p>
+                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                      dapibus leo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="vertical-hr2" />
+          <h2 class="text-center">Trusted By 250+ Companies</h2>
+          <div class="d-flex companies">
+            <div class="logo_slider">
+              <div>
+                <img src="assets/images/icons/Logo.png" alt="Logo" />
+              </div>
+              <div>
+                <img src="assets/images/icons/Logo2.png" alt="Logo" />
+              </div>
+              <div>
+                <img src="assets/images/icons/Logo3.png" alt="Logo" />
+              </div>
+              <div>
+                <img src="assets/images/icons/Logo4.png" alt="Logo" />
+              </div>
+              <div>
+                <img src="assets/images/icons/Logo5.png" alt="Logo" />
+              </div>
+              <div>
+                <img src="assets/images/icons/Logo3.png" alt="Logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======== End of 1.3. Benefits section ========  -->
+      <!-- ======== 1.4. About section ========  -->
+      <section class="About">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="content">
+                <div>
+                  <h2>About Future-Insurance</h2>
+                  <p class="mt-2">
+                    Lorem ipsum dolor sit amet consectetur. Eu nunc phasellus
+                    dictum urna. Viverra enim purus viverra habitant. Aenean
+                    tempor nunc phasellus dictum .Viverra enim purus viverra
+                    habitant. Aenean tempor nunc phasellus dictum .
+                  </p>
+                </div>
+                <div class="features">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="img-main">
+                      <img src="assets/images/icons/team.png" alt="team" />
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                      <h3>Professional Team</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Eu nunc
+                        phasellus dictum urna. Viverra.
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="img-main-2">
+                      <img src="assets/images/icons/rocket.png" alt="team" />
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                      <h3>Vast Options</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Eu nunc
+                        phasellus dictum urna. Viverra.
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="img-main">
+                      <img src="assets/images/icons/deal.png" alt="team" />
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                      <h3>Easy Claim</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Eu nunc
+                        phasellus dictum urna. Viverra.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="yellow-btn">
+                  <a href="#">View More About</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <img
+                    class="client1"
+                    src="assets/images/index/women.jpg"
+                    alt="client"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="client2"
+                    src="assets/images/index/man.jpg"
+                    alt="client"
+                  />
+                </div>
+                <div class="users">
+                  <img src="assets/images/icons/users.png" alt="users" />
+                  <div>
+                    <h2>
+                      <span class="counter" data-target="3000">0</span
+                      ><span class="k">k+</span>
+                    </h2>
+                    <p>Satisfied Client</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======== End of 1.4. About section ========  -->
+      <!-- ======== 1.5. Services section ========  -->
+      <section class="Services">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="d-flex flex-column justify-content-center first">
+                <h2>What Services We Offer</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consect. Eu nunc phasellus dictum
+                  urna. Viverra enim purus.
+                </p>
+                <div class="text-btn">
+                  <a href="#" class="serv-btn">View All Services</a>
+                </div>
+              </div>
+              <div class="d-flex flex-column justify-content-center Vehicle">
+                <img
+                  class="mb-3 icon1"
+                  src="assets/images/icons/car.png"
+                  alt="car"
+                />
+                <img
+                  class="icon2"
+                  src="assets/images/icons/car insurance.png"
+                  alt="health"
+                />
+                <h3>Vehicle Insurance</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eu nunc phasellus
+                  dictum urna dictum urna.
+                </p>
+                <div class="text-btn">
+                  <a href="#"
+                    >Learn More <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex flex-column justify-content-center Medical">
+                <img
+                  class="icon1"
+                  src="assets/images/icons/health.png"
+                  alt="health"
+                />
+                <img
+                  class="icon2"
+                  src="assets/images/icons/health insurance.png"
+                  alt="health"
+                />
+                <h3>Medical Insurance</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eu nunc phasellus
+                  dictum urna dictum urna.
+                </p>
+                <div class="text-btn">
+                  <a href="#"
+                    >Learn More <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="d-flex flex-column justify-content-center Travel">
+                <img
+                  class="mb-3 icon1"
+                  src="assets/images/icons/travel.png"
+                  alt="car"
+                />
+                <img
+                  class="icon2"
+                  src="assets/images/icons/travel insurance.png"
+                  alt="health"
+                />
+                <h3>Travel Insurance</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eu nunc phasellus
+                  dictum urna dictum urna.
+                </p>
+                <div class="text-btn">
+                  <a href="#"
+                    >Learn More <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex flex-column justify-content-center Family">
+                <img
+                  class="icon1"
+                  src="assets/images/icons/family.png"
+                  alt="family"
+                />
+                <img
+                  class="icon2"
+                  src="assets/images/icons/family insurance.png"
+                  alt="health"
+                />
+                <h3>Family Insurance</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eu nunc phasellus
+                  dictum urna dictum urna.
+                </p>
+                <div class="text-btn">
+                  <a href="#"
+                    >Learn More <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="d-flex flex-column justify-content-center Home">
+                <img
+                  class="mb-3 icon1"
+                  src="assets/images/icons/home.png"
+                  alt="home"
+                />
+                <img
+                  class="icon2"
+                  src="assets/images/icons/home insurance.png"
+                  alt="health"
+                />
+                <h3>Home Insurance</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eu nunc phasellus
+                  dictum urna dictum urna.
+                </p>
+                <div class="text-btn">
+                  <a href="#"
+                    >Learn More <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======== End of 1.5. Services section ========  -->
+      <!-- ======== 1.6. Committed section ========  -->
+      <section class="Committed">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="d-flex align-items-center banner">
+                <div class="bg">
+                  <img src="assets/images/index/staff.jpg" alt="workers" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="content">
+                <div>
+                  <h2>We are committed to giving you true value</h2>
+                  <p class="mt-4 para">
+                    Lorem ipsum dolor sit amet consectetur. Eu nunc phasellus
+                    dictum urna. Viverra enim purus viverra habitant.
+                  </p>
+                </div>
+                <div class="features">
+                  <div class="d-flex justify-content-center mb-2">
+                    <i class="fa-regular fa-square-check"></i>
+                    <div class="d-flex flex-column gap-2">
+                      <h3>High Saving Money</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Eu nunc
+                        phasellus dictum urna.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center mt-4">
+                    <i class="fa-regular fa-square-check"></i>
+                    <div class="d-flex flex-column gap-2">
+                      <h3>Excellent Protection</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Eu nunc
+                        phasellus dictum urna.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="yellow-btn">
+                  <a href="#">Start Consultation</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div
+              class="d-flex justify-content-center align-items-center flex-column text-center"
+            >
+              <h1><span class="counter" data-target="100">0</span>+</h1>
+              <p>Happy Investors</p>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center flex-column text-center"
+            >
+              <h1><span class="counter" data-target="1500">0</span>+</h1>
+              <p>Happy Customers</p>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center flex-column text-center"
+            >
+              <h1><span class="counter" data-target="25">0</span>+</h1>
+              <p>Years Of Experience</p>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center flex-column text-center"
+            >
+              <h1><span class="counter" data-target="250">0</span>+</h1>
+              <p>Active Agents</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======== End of 1.6. Committed section ========  -->
+      <!-- ======== 1.7. Secure section ========  -->
+      <section class="Secure">
+        <div class="content">
+          <h2>Secure what’s Important to you in just three steps</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Eu nunc phasellus dictum
+            urna. Viverra enim purus viverra habitant. Aenean tempor nunc
+            phasellus dictum.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h2>01</h2>
+            <h3>Choose Desired Services</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Turpis amet purus leo
+              accumsan purus. Quis fermentum lectus lacinia iaculis.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex justify-content-center align-items-center">
+              <hr />
+              <h2>02</h2>
+              <hr />
+            </div>
+            <h3>Choose Your Plan</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Turpis amet purus leo
+              accumsan purus. Quis fermentum lectus lacinia iaculis.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h2>03</h2>
+            <h3>Enjoy Secure Life</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Turpis amet purus leo
+              accumsan purus. Quis fermentum lectus lacinia iaculis.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ======== End of 1.7. Secure section ========  -->
+      <!-- ======== 1.8. Qoute section ========  -->
+      <section class="Qoute">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="content">
+                <h2>Get A Qoute</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eu nunc phasellus
+                  dictum urna. Viverra enim purus viverra habitant. Aenean
+                  tempor nunc phasellus dictum.
+                </p>
+                <div class="form">
+                  <div class="d-flex">
+                    <input placeholder="Name" type="text" />
+                    <input placeholder="Email" type="email" />
+                  </div>
+                  <div class="d-flex">
+                    <input placeholder="Phone" type="number" />
+                    <input placeholder="Select Policy" type="text" />
+                  </div>
+                  <input
+                    class="last"
+                    placeholder="Write your Message:"
+                    type="text"
+                  />
+                  <div class="yellow-btn">
+                    <a href="#">Submit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="qoute-img">
+                <img src="assets/images/index/quote-img.jpg" alt="family" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======== End of 1.8. Qoute section ========  -->
+      <!-- ======== 1.9. Team section ========  -->
+      <section class="Team">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="d-flex flex-column">
+                <h2>Meet Our Team Of Professionals</h2>
+                <p class="para">
+                  Lorem ipsum dolor sit amet consectetur. Eu nunc phasellus
+                  dictum urna. Viverra enim purus viverra habitant. Aenean
+                  tempor nunc phasellus dictum.
+                </p>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <img src="assets/images/index/team1.png" alt="team" />
+                </div>
+                <div class="content">
+                  <h3>Nolan Dupuy</h3>
+                  <p>Wall Street Broker</p>
+                  <p class="mt-3">
+                    I feel Wonderful for being a part of this team as I this
+                    makes me woho i am today aand i am and will abe thankfull in
+                    regards.
+                  </p>
+                  <div class="icons">
+                    <a href="#">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex">
+                <div>
+                  <img src="assets/images/index/team2.png" alt="team" />
+                </div>
+                <div class="content">
+                  <h3>Eric Nichols</h3>
+                  <p>Wall Street Broker</p>
+                  <p class="mt-3">
+                    I feel Wonderful for being a part of this team as I this
+                    makes me woho i am today aand i am and will abe thankfull in
+                    regards.
+                  </p>
+                  <div class="icons">
+                    <a href="#">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <img src="assets/images/index/team3.png" alt="team" />
+                </div>
+                <div class="content">
+                  <h3>Alexa Anderson</h3>
+                  <p>Wall Street Broker</p>
+                  <p class="mt-3">
+                    I feel Wonderful for being a part of this team as I this
+                    makes me woho i am today aand i am and will abe thankfull in
+                    regards.
+                  </p>
+                  <div class="icons">
+                    <a href="#">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======== End of 1.9. Team section ========  -->
+      <!-- ======== 1.10. Customer section ========  -->
+      <section class="Customer">
+        <div class="container">
+          <div class="Customer-slider">
+            <div>
+              <div class="d-flex">
+                <img src="assets/images/index/customer.jpg" alt="customer" />
+                <div class="content">
+                  <h2>Customer Says</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt
+                  </p>
+                  <a href="#">
+                    <h3>Romain Michel</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <img src="assets/images/index/team3.png" alt="customer" />
+                <div class="content">
+                  <h2>Customer Says</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt
+                  </p>
+                  <a href="#">
+                    <h3>Romain Michel</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <img src="assets/images/index/team1.png" alt="customer" />
+                <div class="content">
+                  <h2>Customer Says</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt
+                  </p>
+                  <a href="#">
+                    <h3>Romain Michel</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <img src="assets/images/index/team2.png" alt="customer" />
+                <div class="content">
+                  <h2>Customer Says</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt
+                  </p>
+                  <a href="#">
+                    <h3>Romain Michel</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======== End of 1.10. Customer section ========  -->
+      <!-- ======== 1.11. Consultation section ========  -->
+      <section class="Consultation">
+        <div class="container">
+          <div class="d-flex flex-column">
+            <h2>Secure Your Future With Future-Insur</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Eu nunc phasellus dictum
+              urna. Viverra enim purus viverra habitant. Aenean tempor nunc
+              phasellus dictum.
+            </p>
+            <div class="btns">
+              <div class="yellow-btn">
+                <a href="#">Get Consultation</a>
+              </div>
+              <div class="text-btn">
+                <a href="#">View Our Services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======== End of 1.11. Consultation section ========  -->
+      <!-- ======== 1.12. Pricing section ========  -->
+      <section class="Pricing">
+        <div class="container">
+          <div class="content">
+            <h2>Pricing Plan</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Eu nunc phasellus dictum
+              urna. Viverra enim purus viverra habitant. Aenean tempor nunc
+              phasellus dictum.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="d-flex flex-column">
+                <h3>Basic Plan</h3>
+                <span class="d-flex">
+                  <h2>$24</h2>
+                  <p>/Per Month</p>
+                </span>
+                <hr />
+                <div class="items">
+                  <p><i class="fa-solid fa-check"></i> SEO Audits</p>
+                  <p><i class="fa-solid fa-check"></i> SEO Managements</p>
+                  <p><i class="fa-solid fa-check"></i> Digital Marketing</p>
+                  <p><i class="fa-solid fa-check"></i> Site Managment</p>
+                </div>
+                <div class="yellow-btn">
+                  <a href="#">Get Started</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex Premium">
+                <img src="assets/images/icons/money.png" alt="money" />
+                <h3>Premium</h3>
+                <span class="d-flex">
+                  <h2>$50</h2>
+                  <p>/Per Month</p>
+                </span>
+                <hr />
+                <div class="items">
+                  <p><i class="fa-solid fa-check"></i> SEO Audits</p>
+                  <p><i class="fa-solid fa-check"></i> SEO Managements</p>
+                  <p><i class="fa-solid fa-check"></i> Digital Marketing</p>
+                  <p><i class="fa-solid fa-check"></i> Site Managment</p>
+                </div>
+                <div class="yellow-btn">
+                  <a href="#">Get Started</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex flex-column">
+                <h3>Standard</h3>
+                <span class="d-flex">
+                  <h2>$35</h2>
+                  <p>/Per Month</p>
+                </span>
+                <hr />
+                <div class="items">
+                  <p><i class="fa-solid fa-check"></i> SEO Audits</p>
+                  <p><i class="fa-solid fa-check"></i> SEO Managements</p>
+                  <p><i class="fa-solid fa-check"></i> Digital Marketing</p>
+                  <p><i class="fa-solid fa-check"></i> Site Managment</p>
+                </div>
+                <div class="yellow-btn">
+                  <a href="#">Get Started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======== End of 1.12. Pricing section ========  -->
+      <!-- ======== 1.13. FAQ section ========  -->
+      <section class="FAQ">
+        <div class="container">
+          <div class="content">
+            <h2>Frequently Asked Questions</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Eu nunc phasellus dictum
+              urna. Viverra enim purus viverra habitant. Aenean tempor nunc
+              phasellus dictum.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                      </h4>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. In vitae turpis massa sed elementum tempus
+                        egestas sed. Diam in arcu cursus euismod. Dolor sed
+                        viverra ipsum nunc aliquet bibendum enim facilisis
+                        gravida
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                      </h4>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. In vitae turpis massa sed elementum tempus
+                        egestas sed. Diam in arcu cursus euismod. Dolor sed
+                        viverra ipsum nunc aliquet bibendum enim facilisis
+                        gravida
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                      </h4>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. In vitae turpis massa sed elementum tempus
+                        egestas sed. Diam in arcu cursus euismod. Dolor sed
+                        viverra ipsum nunc aliquet bibendum enim facilisis
+                        gravida
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      <h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                      </h4>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. In vitae turpis massa sed elementum tempus
+                        egestas sed. Diam in arcu cursus euismod. Dolor sed
+                        viverra ipsum nunc aliquet bibendum enim facilisis
+                        gravida
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex">
+                <div class="left-column">
+                  <div class="image-item">
+                    <img src="assets/images/index/faqimg1.jpg" alt="Couple" />
+                  </div>
+                  <div class="image-item">
+                    <img src="assets/images/index/faqimg2.jpg" alt="Family" />
+                  </div>
+                </div>
+                <div class="right-column">
+                  <div class="image-item">
+                    <img src="assets/images/index/faqimg3.jpg" alt="Family" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======== End of 1.13. FAQ section ========  -->
+      <!-- ======== 1.14. Posts section ========  -->
+      <section class="Posts">
+        <div class="container">
+          <div class="content">
+            <h2>Latest Posts</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="assets/images/index/post1.jpg" alt="family" />
+              <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+              <div>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img src="assets/images/index/post2.jpg" alt="family" />
+              <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+              <div>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img src="assets/images/index/post3.jpg" alt="family" />
+              <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+              <div>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======== End of 1.14. Posts section ========  -->
+      <!-- ======== 1.15. Footer section ========  -->
+      <footer class="Footer">
+        <div class="container">
+          <div class="d-flex">
+            <div>
+              <a href="#"><img src="assets/images/logo.svg" alt="logo" /></a>
+            </div>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Financial</a>
+              </li>
+              <li>
+                <a href="#">Investor</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">About us</a>
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div class="newsletter">
+            <div class="icons">
+              <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+            <div class="address">
+              <p>Plaza XYZ Street, XYZ City. XYZ</p>
+              <p>xyz@yourname.com</p>
+              <p>123-4567-890</p>
+            </div>
+            <div class="main">
+              <h3>Subscribe to Our newsletter</h3>
+              <div class="mail">
+                <input type="email" placeholder="Enter Email Address" />
+                <div class="yellow-btn">
+                  <a href="#">Subscribe</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="copyright">
+            <p>
+              Copyright © 2023 Future Insur By Evonicmedia. All Rights Reserved.
+            </p>
+            <p class="powered">Powered by Evonicsoft</p>
+          </div>
+        </div>
+      </footer>
+      <!-- ======== End of 1.15. Footer section ========  -->
+    </div>
+
+    <!-- bootstrap min javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- j Query -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <!-- slick slider js -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- main javascript -->
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1389 @@
+/* import font family is == Work Sans ==*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* import font family is == Montserrat ==*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* =====  01. Reset  ====== */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(28, 16, 24, 1);
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+button:focus {
+  outline: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+select::-ms-expand {
+  display: none;
+}
+label {
+  font-weight: normal;
+}
+iframe {
+  width: 100%;
+}
+/* =====  End of 01. Reset  ====== */
+/* ===== 02. Global Style ===== */
+h1 {
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 80px;
+  font-family: "Work Sans", sans-serif;
+}
+h2 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+  font-family: "Work Sans", sans-serif;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25px;
+  font-family: "Work Sans", sans-serif;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  font-family: "Work Sans", sans-serif;
+}
+h5 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  font-family: "Work Sans", sans-serif;
+}
+h6 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: "Work Sans", sans-serif;
+}
+p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  font-family: "Montserrat", sans-serif;
+}
+button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  padding: 10px 35px;
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+.yellow-btn a {
+  background-color: rgba(255, 224, 102, 1);
+  color: rgba(28, 16, 24, 1);
+  padding: 16px 30px;
+  border-radius: 30px;
+  transition-duration: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.yellow-btn a:hover {
+  background-color: rgba(28, 16, 24, 1);
+  color: #fff;
+}
+.text-btn a {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 10px;
+}
+
+/* ===== End of 02. Global Style ===== */
+/* ========= 1.1. header section ========= */
+header {
+  background-color: rgba(189, 57, 89, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.navbar {
+  padding: 20px 0px;
+}
+.nav-logo {
+  z-index: 3;
+}
+.nav-logo img {
+  width: 131px;
+}
+.navbar-collapse {
+  justify-content: center;
+}
+.right-sidbar {
+  width: 280px;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: -355px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 20px;
+  z-index: 99;
+  background-color: rgba(28, 16, 24, 1);
+}
+.open-aside {
+  display: none;
+  z-index: 2;
+}
+aside .fa-xmark {
+  padding: 8px 13px;
+  background-color: rgba(255, 224, 102, 1);
+  color: rgba(28, 16, 24, 1);
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+}
+aside .fa-caret-down {
+  color: rgba(189, 57, 89, 1);
+  font-size: 22px;
+}
+aside a {
+  color: #fff;
+}
+aside a:hover {
+  color: rgba(189, 57, 89, 1);
+}
+#slid-drop {
+  display: none;
+}
+aside li {
+  padding: 12px;
+}
+#slid-drop li {
+  padding: 12px 0px;
+}
+.aside-dropdwon {
+  display: block !important;
+  margin-top: 10px;
+}
+.page-btn {
+  padding: 0px 0px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+.navbar ul li a {
+  color: #fff;
+  padding: 12px;
+}
+.navbar ul li a:hover {
+  color: rgba(255, 224, 102, 1);
+}
+.dropdown ul {
+  width: 200px;
+}
+.dropdown-menu {
+  transition: transform 2.3s ease;
+  padding: 0px;
+  background-color: #fff;
+}
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: rgba(28, 16, 24, 1);
+}
+.dropdown ul li a:hover {
+  background-color: transparent;
+  color: rgba(189, 57, 89, 1);
+}
+.open-aside {
+  padding: 9px 14px;
+  background-color: rgba(255, 224, 102, 1);
+  border: none;
+  border-radius: 10px;
+  font-size: 25px;
+  color: rgba(28, 16, 24, 1);
+}
+
+header .vertical-hr {
+  height: 30px;
+  border: 1px solid #fff;
+  margin-right: 30px;
+  margin-left: -20px;
+}
+
+header .call {
+  background-color: rgba(255, 224, 102, 1);
+  color: rgba(28, 16, 24, 1);
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+header .call img {
+  width: 85%;
+}
+
+/* ========= End of 1.1. header section ========= */
+
+/* ========= 1.2. Hero section ========= */
+.Hero {
+  background-image: url("../images/bg/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0px 130px;
+  color: #fff;
+  margin-top: -2px;
+}
+.Hero .content {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  align-items: start;
+  justify-content: center;
+}
+.Hero .content .d-flex {
+  margin-top: 50px;
+}
+.Hero .circle {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  height: 400px;
+  width: 400px;
+  border: 4px solid rgba(255, 224, 102, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========= End of 1.2. Hero section ========= */
+/* ========= 1.3. Benefits section ========= */
+.Benefits {
+  padding: 100px 0px;
+  color: rgba(28, 16, 24, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+.Benefits .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Benefits .row {
+  border-radius: 30px;
+  border: 1px solid rgba(223, 223, 223, 1);
+  box-shadow: 0px 37px 40px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Benefits .content {
+  height: 370px;
+  background-image: url("/assets/images/bg/benefits-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0px 40px;
+  justify-content: center;
+  border-radius: 20px;
+}
+.Benefits .features {
+  padding: 30px 40px 30px 0px;
+}
+.Benefits .features .icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Benefits .features .icons .icon {
+  height: 75px;
+  width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  border: 1px solid rgba(210, 210, 210, 1);
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.2s;
+}
+.Benefits .features .icons .icon:hover {
+  background-color: rgba(189, 57, 89, 1);
+}
+.Benefits .features .icons .icon img {
+  width: 40%;
+}
+.Benefits .features .icons .icon .icon2 {
+  display: none;
+}
+.Benefits .features .icons .icon:hover .icon1 {
+  display: none;
+}
+.Benefits .features .icons .icon:hover .icon2 {
+  display: block;
+}
+.Benefits .vertical-hr {
+  height: 50px;
+  width: 0px;
+  border: 1px solid rgba(210, 210, 210, 1);
+  opacity: 0.8;
+  margin: 0px;
+  padding: 0px;
+}
+.Benefits .features .details {
+  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+.Benefits .vertical-hr2 {
+  height: 100px;
+  width: 0px;
+  border: 1px solid rgba(210, 210, 210, 1);
+  margin: 50px 0px;
+  padding: 0px;
+}
+.Benefits .companies {
+  margin-top: 60px;
+  gap: 80px;
+  width: 100%;
+}
+.Benefits .companies .logo_slider {
+  width: 80%;
+  margin: 0px auto;
+}
+.Benefits .companies .logo_slider div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ========= End of 1.3. Benefits section ========= */
+/* ========= 1.4. About section ========= */
+.About {
+  padding: 120px 0px 0px;
+  background-color: rgba(252, 233, 238, 0.5);
+  color: rgba(28, 16, 24, 1);
+}
+.About .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 50px;
+}
+.About .content hr {
+  margin: 30px 0px;
+}
+
+.About .features .justify-content-center {
+  gap: 40px;
+}
+
+.About .features .justify-content-center .img-main,
+.About .features .justify-content-center .img-main-2 {
+  width: 85px;
+}
+.About .features .justify-content-center .img-main img {
+  width: 100%;
+}
+.About .features .justify-content-center .img-main-2 img {
+  width: 70%;
+}
+.About .justify-content-between {
+  background-image: url("../images/bg/about.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+  height: 700px;
+  top: -40px;
+}
+.About .client1 {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  border-radius: 30px;
+  height: 400px;
+  width: 270px;
+  object-fit: cover;
+  object-position: center;
+}
+.About .client2 {
+  position: absolute;
+  bottom: 45px;
+  right: 36px;
+  border-radius: 30px;
+  height: 400px;
+  width: 270px;
+  object-fit: cover;
+  object-position: center;
+}
+.About .users {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 470px;
+  left: 20px;
+  border-radius: 30px;
+  background-color: rgba(189, 57, 89, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 30px 70px 30px 30px;
+}
+.About .users .k {
+  color: rgba(255, 224, 102, 1);
+}
+
+/* ========= End of 1.4. About section ========= */
+/* ========= 1.5. Services section ========= */
+.Services {
+  padding: 100px 0px;
+}
+.Services .row .col-md-4 {
+  padding: 0px;
+  margin: 0px;
+}
+.Services .flex-column {
+  padding: 50px 30px 30px 30px;
+  height: 370px;
+  border-right: 1px solid rgba(223, 223, 223, 1);
+  border-bottom: 1px solid rgba(223, 223, 223, 1);
+  align-items: start;
+  gap: 15px;
+  transition-duration: 0.2s;
+}
+.Services .flex-column:hover {
+  background-color: rgba(189, 57, 89, 1);
+  color: white;
+}
+.Services .flex-column:hover .text-btn a,
+.Services .flex-column:hover .text-btn a i {
+  color: white;
+}
+.Services .flex-column .icon2 {
+  display: none;
+}
+.Services .flex-column:hover .icon1 {
+  display: none;
+}
+.Services .flex-column:hover .icon2 {
+  display: block;
+}
+.Services .Vehicle {
+  border-bottom: 0px;
+}
+.Services .Medical {
+  padding: 30px 30px 30px 30px;
+}
+.Services .Medical img {
+  margin-bottom: 12px;
+}
+.Services .Travel {
+  padding: 50px 30px 30px 30px;
+  border-bottom: 0px;
+}
+.Services .Travel img {
+  margin-bottom: 12px;
+}
+.Services .Family {
+  padding: 30px 30px 30px 30px;
+  border-right: 0px;
+}
+.Services .Family img {
+  margin-bottom: 12px;
+}
+.Services .Home {
+  padding: 50px 30px 30px 30px;
+  border-bottom: 0px;
+  border-right: 0px;
+}
+.Services .Home img {
+  margin-bottom: 12px;
+}
+.Services .flex-column .text-btn a {
+  padding-left: 0px;
+  color: rgba(28, 16, 24, 1);
+  transition-duration: 0.2s;
+}
+.Services .flex-column .text-btn a:hover {
+  color: #ffe066;
+}
+.Services .flex-column .text-btn a i {
+  margin-left: 8px;
+  color: rgba(189, 57, 89, 1);
+  transition-duration: 0.2s;
+}
+.Services .flex-column .text-btn a:hover i {
+  margin-left: 15px;
+}
+.Services .flex-column .text-btn .serv-btn {
+  color: rgba(189, 57, 89, 1);
+}
+.Services .flex-column .text-btn .serv-btn:hover {
+  color: #ffe066;
+}
+/* ========= End of 1.5. Services section ========= */
+/* ========= 1.6. Committed section ========= */
+.Committed {
+  padding: 100px 0px 0px;
+  color: rgba(28, 16, 24, 1);
+}
+.Committed .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+  width: 540px;
+  padding: 30px 0px;
+}
+.Committed .features h3 {
+  color: rgba(189, 57, 89, 1);
+}
+.Committed .features i {
+  color: rgba(189, 57, 89, 1);
+  font-size: 22px;
+  padding-top: 2px;
+}
+.Committed .col-md-6 .d-flex {
+  height: 100%;
+  align-items: start;
+  gap: 15px;
+}
+.Committed .bg {
+  background-color: rgba(189, 57, 89, 1);
+  width: 70%;
+  height: 100%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 80px;
+}
+.Committed .bg img {
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: left;
+  width: 140%;
+  height: 80%;
+}
+.Committed .justify-content-between {
+  padding: 100px;
+}
+.Committed .justify-content-between .flex-column h1 {
+  color: rgba(189, 57, 89, 1);
+}
+/* ========= End of 1.6. Committed section ========= */
+/* ========= 1.7. Secure section ========= */
+.Secure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0px 150px;
+  background-color: rgba(28, 16, 24, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.Secure .content {
+  width: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Secure .row {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+}
+.Secure .row .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.Secure .row .col-md-4 h2 {
+  background-color: rgba(255, 224, 102, 1);
+  color: rgba(28, 16, 24, 1);
+  margin-bottom: 10px;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+.Secure .row .col-md-4 h3 {
+  color: rgba(255, 224, 102, 1);
+}
+.Secure .row .col-md-4 hr {
+  border: 1px solid rgba(255, 255, 255, 1);
+  width: 252px;
+}
+/* ========= End of 1.7. Secure section ========= */
+/* ========= 1.8. Qoute section ========= */
+.Qoute {
+  padding: 100px 0px 0px;
+  background-color: rgba(189, 57, 89, 1);
+  color: rgba(250, 250, 250, 1);
+  position: relative;
+  height: 700px;
+}
+.Qoute .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+.Qoute .form {
+  margin: 15px 0px;
+}
+.Qoute .form .d-flex {
+  gap: 10px;
+}
+.Qoute .form input {
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: 1px solid rgba(223, 223, 223, 1);
+  background-color: rgba(255, 255, 255, 1);
+  margin: 10px 0px;
+  outline: none;
+}
+.Qoute .form .last {
+  padding: 20px 25px 100px;
+  width: 100%;
+}
+.Qoute .form .yellow-btn {
+  margin-top: 10px;
+}
+.Qoute .qoute-img {
+  height: 760px;
+  width: 570px;
+  position: absolute;
+  bottom: 0px;
+}
+.Qoute .qoute-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px 30px 0px 0px;
+  object-fit: cover;
+  object-position: center;
+}
+/* ========= End of 1.8. Qoute section ========= */
+/* ========= 1.9. Team section ========= */
+.Team {
+  padding: 100px 0px;
+  background-color: rgba(255, 253, 243, 1);
+}
+.Team p {
+  color: rgba(108, 99, 105, 1);
+}
+.Team .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.Team .para {
+  margin-top: 15px;
+}
+.Team .d-flex {
+  justify-content: start;
+  align-items: center;
+  height: 320px;
+}
+.Team .flex-column {
+  justify-content: center;
+}
+.Team .d-flex img {
+  border-radius: 14px;
+  object-fit: cover;
+  object-position: center;
+}
+.Team .content {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(223, 223, 223, 1);
+  padding: 30px 40px;
+  height: 80%;
+  width: 360px;
+  border-radius: 30px;
+  margin-left: -50px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 37px 40px rgba(0, 0, 0, 0.05);
+  transition-duration: 0.2s;
+}
+.Team .content:hover {
+  border: 1px solid rgba(189, 57, 89, 1);
+}
+.Team .content h3 {
+  color: rgba(61, 63, 65, 1);
+}
+.Team .content .icons {
+  display: flex;
+  gap: 25px;
+  margin-top: 10px;
+}
+.Team .content .icons i {
+  font-size: 20px;
+  color: rgba(189, 57, 89, 1);
+  transition-duration: 0.2s;
+}
+.Team .content .icons i:hover {
+  color: #1c1018;
+}
+/* ========= End of 1.9. Team section ========= */
+/* ========= 1.10. Customer section ========= */
+.Customer {
+  padding: 50px 0px;
+  background-image: url("../images/bg/customer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.Customer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Customer .container .Customer-slider {
+  width: 850px;
+}
+.Customer .container p {
+  color: rgba(108, 99, 105, 1);
+}
+.Customer .container .d-flex {
+  justify-content: center;
+  align-items: start;
+  gap: 50px;
+  padding: 100px 10px;
+}
+.Customer .container .d-flex img {
+  width: 170px;
+  height: 170px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: center;
+}
+.Customer .container .d-flex .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Customer .container .d-flex .content h3 {
+  color: rgba(189, 57, 89, 1);
+  margin-top: 20px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+/* ========= End of 1.10. Customer section ========= */
+/* ========= 1.11. Consultation section ========= */
+.Consultation {
+  padding: 120px 0px 100px;
+  background-image: linear-gradient(
+      rgba(189, 57, 89, 0.8),
+      rgba(189, 57, 89, 0.8)
+    ),
+    url("../images/bg/Consultation-bg.jpg");
+  color: rgba(255, 255, 255, 1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.Consultation .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Consultation .flex-column {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 700px;
+}
+.Consultation .btns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+/* ========= End of 1.11. Consultation section ========= */
+/* ========= 1.12. Pricing section ========= */
+.Pricing {
+  padding: 100px 0px;
+}
+.Pricing .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.Pricing .container .content {
+  width: 800px;
+}
+.Pricing .container .content p {
+  margin-top: 20px;
+}
+.Pricing .container p {
+  color: rgba(108, 99, 105, 1);
+}
+.Pricing .container .row {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Pricing .container .row .col-md-4 {
+  margin: 0px;
+  padding: 0px;
+}
+.Pricing .flex-column {
+  padding: 50px;
+  width: 380px;
+  justify-content: center;
+  align-items: start;
+  gap: 15px;
+  text-align: start;
+  background-color: rgba(255, 253, 243, 1);
+}
+.Pricing .flex-column h3 {
+  color: rgba(252, 169, 5, 1);
+}
+.Pricing .flex-column span {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  gap: 10px;
+  margin-top: 10px;
+}
+.Pricing .flex-column span h2 {
+  line-height: 36px;
+}
+.Pricing .flex-column hr {
+  border: 1px solid rgba(210, 210, 210, 1);
+  width: 100%;
+  margin: 0px 0px 15px;
+  padding: 0px;
+}
+.Pricing .flex-column .items {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.Pricing .flex-column .items p i {
+  color: rgba(189, 57, 89, 1);
+  margin-right: 5px;
+}
+.Pricing .flex-column .yellow-btn {
+  margin-top: 30px;
+}
+.Pricing .Premium {
+  flex-direction: column;
+  padding: 50px;
+  width: 380px;
+  justify-content: center;
+  align-items: start;
+  gap: 15px;
+  text-align: start;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(223, 223, 223, 1);
+  border-radius: 30px;
+  box-shadow: 0px 35px 40px rgba(0, 0, 0, 0.05);
+}
+.Pricing .Premium h3 {
+  color: rgba(252, 169, 5, 1);
+}
+.Pricing .Premium span {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  gap: 10px;
+  margin-top: 10px;
+}
+.Pricing .Premium span h2 {
+  line-height: 36px;
+}
+.Pricing .Premium hr {
+  border: 1px solid rgba(210, 210, 210, 1);
+  width: 100%;
+  margin: 20px 0px 15px;
+  padding: 0px;
+}
+.Pricing .Premium .items {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.Pricing .Premium .items p i {
+  color: rgba(189, 57, 89, 1);
+  margin-right: 5px;
+}
+.Pricing .Premium .yellow-btn {
+  margin-top: 30px;
+}
+/* ========= End of 1.12. Pricing section ========= */
+/* ========= 1.13. FAQ section ========= */
+.FAQ {
+  padding: 100px 0px;
+}
+.FAQ .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.FAQ .container p {
+  color: rgba(108, 99, 105, 1);
+}
+.FAQ .content {
+  width: 800px;
+  text-align: center;
+}
+.FAQ .content p {
+  margin-top: 20px;
+}
+.FAQ .row {
+  margin-top: 70px;
+}
+.FAQ .row .col-md-4 {
+  width: 50%;
+}
+.FAQ .accordion-item {
+  border-radius: 30px;
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(223, 223, 223, 1);
+  margin: 0px 0px 17px;
+  padding: 10px 10px;
+  width: 100%;
+}
+.FAQ .accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  border: none;
+  color: rgba(28, 16, 24, 1);
+  box-shadow: none;
+  padding-bottom: 0;
+}
+.FAQ .accordion-button {
+  gap: 15px;
+}
+.FAQ .accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+.FAQ .accordion-button:not(.collapsed)::after {
+  background-image: url("../images/icons/close.png");
+}
+.FAQ .accordion-button::after {
+  background-image: url("../images/icons/open.png");
+}
+.FAQ .d-flex {
+  padding-left: 20px;
+  gap: 20px;
+  align-items: center;
+  height: 100%;
+}
+.FAQ .left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.FAQ .image-item {
+  position: relative;
+}
+.FAQ .image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: center;
+}
+/* ========= End of 1.13. FAQ section ========= */
+/* ========= 1.14. Posts section ========= */
+.Posts {
+  padding: 100px 0px;
+}
+.Posts .container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Posts .content {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  gap: 20px;
+}
+.Posts .row {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.Posts .row .col-md-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  text-align: start;
+  margin: 0px;
+  padding: 0px;
+  width: 31%;
+}
+.Posts .row .col-md-3 img {
+  width: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: center;
+}
+.Posts .row .col-md-3 div {
+  padding: 5px 0px;
+  border-bottom: 1px solid rgba(210, 210, 210, 1);
+}
+.Posts .row .col-md-3 a {
+  color: rgba(189, 57, 89, 1);
+}
+/* ========= End of 1.14. Posts section ========= */
+/* ========= 1.15. Footer section ========= */
+.Footer {
+  padding: 100px 0px;
+  background-color: rgba(189, 57, 89, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.Footer .d-flex {
+  justify-content: space-between;
+  align-items: center;
+}
+.Footer .d-flex ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+.Footer .d-flex ul li a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+.Footer hr {
+  opacity: 1;
+}
+.Footer .newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Footer .newsletter .icons {
+  display: flex;
+  gap: 20px;
+}
+.Footer .newsletter .icons i {
+  height: 30px;
+  width: 30px;
+  border-radius: 19px;
+  background-color: rgba(255, 224, 102, 1);
+  color: rgba(189, 57, 89, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Footer .address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.Footer .main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  margin: 30px 0px;
+}
+.Footer .main .mail {
+  display: flex;
+}
+.Footer .main .mail input {
+  padding: 0px 20px;
+  border-radius: 30px;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+.Footer .main .mail .yellow-btn {
+  margin-left: -50px;
+}
+.Footer .copyright {
+  display: flex;
+  justify-content: space-between;
+}
+/* ========= End of 1.15. Footer section ========= */
+/* ========= 12.1. Coming section ========= */
+.coming_bg {
+  background-image: linear-gradient(
+      rgba(189, 57, 89, 0.8),
+      rgba(189, 57, 89, 0.8)
+    ),
+    url("../images/bg/coming-bg.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.Coming {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+}
+.Coming .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.Coming h1 {
+  color: #ffe066;
+  font-size: 150px;
+  width: 970px;
+  line-height: 120px;
+  padding: 20px 0px;
+}
+.Coming .content p {
+  width: 600px;
+}
+.Coming .align-items-center {
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  display: flex;
+}
+.Coming .align-items-center .title {
+  width: 400px;
+  margin-bottom: 10px;
+}
+.Coming .align-items-center .icons {
+  display: flex;
+  gap: 15px;
+}
+.Coming .align-items-center .icons i {
+  color: rgba(255, 255, 255, 1);
+  font-size: 17px;
+  transition-duration: 0.2s;
+}
+.Coming .align-items-center .icons i:hover {
+  color: #ffe066;
+}
+/* ========= End of 12.1. Coming section ========= */
+/* ========= 13.1. Error section ========= */
+.error_bg {
+  background-image: linear-gradient(
+      rgba(189, 57, 89, 0.8),
+      rgba(189, 57, 89, 0.8)
+    ),
+    url("../images/bg/Error-bg.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.Error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+}
+.Error .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 600px;
+  gap: 30px;
+}
+.Error h1 {
+  background-color: #ffe066;
+  color: #bd3959;
+  font-size: 200px;
+  padding: 80px 30px;
+  border-radius: 50px;
+}
+.Error .align-items-center {
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  display: flex;
+}
+.Error .align-items-center .title {
+  width: 400px;
+  margin-bottom: 10px;
+}
+.Error .align-items-center .icons {
+  display: flex;
+  gap: 15px;
+}
+.Error .align-items-center .icons i {
+  color: rgba(255, 255, 255, 1);
+  font-size: 17px;
+  transition-duration: 0.2s;
+}
+.Error .align-items-center .icons i:hover {
+  color: #ffe066;
+}
+/* ========= End of 13.1. Error section ========= */
